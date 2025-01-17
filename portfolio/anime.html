@@ -1,0 +1,280 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f9f9f9;
+                color: #333;
+            }
+
+            header {
+                background-color: #004d00;
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            header h1 {
+                margin: 0;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+            }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+            section {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .home {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 1000px;
+                margin: 40px auto;
+                padding: 20px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .home-text {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .home-text h2 {
+                font-size: 2em;
+                color: #004d00;
+            }
+
+            .home-text p {
+                font-size: 1.2em;
+            }
+
+            .home-image {
+                flex: 1;
+                text-align: center;
+            }
+
+            .home-image img {
+                width: 80%;
+                border-radius: 8px;
+            }
+
+            .skills, .projects {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .skill, .project {
+                flex: 1 1 calc(50% - 15px);
+                padding: 10px;
+                background-color: #e6ffe6;
+                border-radius: 5px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            .project img {
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            .all_footer {
+                background-color: #004d00;
+        width: 100vw;
+        height: 18vh;
+        text-align: center;
+        color: aliceblue;
+        padding: 10px 0; 
+        position: relative;
+        border-top-right-radius: 50px ;
+    }
+
+    .social_media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social_media img {
+        /* margin-top: 2vw; */
+        width: 3vw;
+    }
+
+    .nameoflogo p{
+        position: relative;
+        width: auto;
+        height: auto;
+        background-color: #3498db;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .nameoflogo .logoname{
+        position: absolute;
+        bottom: 100%; 
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        white-space: nowrap;
+        opacity: 0; 
+        visibility: hidden; 
+        transition: opacity 0.3s, visibility 0.3s; 
+    }
+
+            .contact-section {
+                display: flex;
+                justify-content: space-between;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .contact-section p {
+                flex: 1;
+                padding: 20px;
+                background-color: #e6ffe6;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .contact-section a {
+                color: #004d00;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            @media (max-width: 600px) {
+                .skill, .project {
+                    flex: 1 1 100%;
+                }
+
+                .contact-section {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section id="home" class="home">
+            <div class="home-text">
+                <h2>Crafting Digital Experiences</h2>
+                <p>Hello! I'm Kisanet H/mariam, a passionate web developer focused on creating impactful digital solutions. 
+                With skills in both front-end and back-end development, I strive to build websites that are both visually appealing and highly functional.</p>
+            </div>
+            <div class="home-image">
+                <img src="./../Image//woman on work.jpeg" alt="Tinbite Elias">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Kisu, a passionate web developer. I love creating beautiful and functional websites using HTML, CSS, and JavaScript. Let's create something amazing together!</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Responsive Design</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>A simple website showcasing my design skills.</p>
+                    <a href="#" target="_blank">
+                        <img src="../Image/logo.jpeg" alt="Project 1 Screenshot">
+                    </a>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>A portfolio built with HTML and CSS.</p>
+                    <a href="#" target="_blank">
+                        <img src="../Image/woman on work.jpeg" alt="Project 2 Screenshot">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-section">
+                <p>Email: <a href="kisuhaile4@gmail.com">kisuhaile4@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/kisu" target="_blank">kisanet Hailemariam</a></p>
+                <p>Github: <a href="https://www.github.com/in/kisu" target="_blank">Kisu Haile</a></p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="all_footer">
+                <div class="social_media">
+                    <div class="nameoflogo">
+                        <p class="logoname">Telegram</p>
+                        <a href="https://t.me/kisuhaile" target="_blank"><img id="image" src="../Logo/telegram.png" alt="Telegram"></a>
+                    </div>
+                    <div class="nameoflogo">
+                        <p class="logoname">Facebook</p>
+                        <a href="https://facebook.com/whoiskisu" target="_blank"><img id="image" src="../Logo/Facebook.png" alt="Facebook"></a>
+                    </div>
+                    <div class="nameoflogo">
+                        <p class="logoname">LinkedIn</p>
+                        <a href="https://et.linkedin.com/in/kisanet-hailemariam-2118642a9" target="_blank"><img id="image" src="../Logo/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                    <div class="nameoflogo">
+                        <p class="logoname">Contact Us</p>
+                        <a href="../html/about.html" target="_blank"><img id="image" src="../Logo/phone.png" alt="Contact"></a>
+                    </div>
+                </div>
+                <div class="copy_right">
+                    <p>&copy; 2025 Health Calculator. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
